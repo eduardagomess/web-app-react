@@ -39,7 +39,7 @@ app.post('/resultado', (req, res, next) => {
 
     let new_list =[]
     const listSize = list_prime.length
-    for (var i = 0; i < list_prime.length ; i++){
+    for (let i = 0; i < list_prime.length ; i++){
         
         console.log(i == listSize)
         console.log(list_prime[i])
