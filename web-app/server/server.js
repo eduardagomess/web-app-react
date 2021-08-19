@@ -10,18 +10,18 @@ app.use(express.json());
  
 
 app.post('/resultado', (req, res, next) => { 
-    const num1 = parseInt(req.body.num1)
-    const num2 = parseInt(req.body.num2)
-    const list_prime = []
+    const firstNumber = parseInt(req.body.num1)
+    const secondNumber = parseInt(req.body.num2)
+    const primeNumbersList = []
     
     function isPrime(number){
-        let number_of_dividers = 0
-        for (let i = 1; i < number+1; i++){
+        let numberOfDividers = 0
+        for (let i = 1; i < number + 1; i++){
             if (number % i === 0){
-                number_of_dividers+=1
+                numberOfDividers +=1
             }
         }
-        if (number_of_dividers === 2){
+        if (numberOfDividers === 2){
             return true;
         }
         else{
@@ -29,25 +29,25 @@ app.post('/resultado', (req, res, next) => {
         }
     }
     
-    if (num2 > num1){
-        for (let i=num1; i < num2; i++){
+    if (secondNumber > firstNumber){
+        for (let i=firstNumber; i < secondNumber; i++){
             if (isPrime(i)){
-                list_prime.push(i)
+                primeNumbersList.push(i)
             }
         }
     }
 
     let new_list =[]
-    const listSize = list_prime.length
-    for (let i = 0; i < list_prime.length ; i++){
+    const listSize = primeNumbersList.length
+    for (let i = 0; i < primeNumbersList.length ; i++){
         
         console.log(i === listSize)
-        console.log(list_prime[i])
+        console.log(primeNumbersList[i])
         if (i === listSize-1){
-            new_list.push(list_prime[i] + '.')
+            new_list.push(primeNumbersList[i] + '.')
         }
         else{
-            new_list.push(list_prime[i] + ',')
+            new_list.push(primeNumbersList[i] + ',')
         }
     
     } 
