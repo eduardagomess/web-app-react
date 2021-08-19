@@ -35,6 +35,13 @@ app.post('/resultado', (req, res, next) => {
                 primeNumbersList.push(i)
             }
         }
+    }else{
+        for (let i=secondNumber; i < firstNumber; i++){
+            if (isPrime(i)){
+                primeNumbersList.push(i)
+            }
+        }
+
     }
 
     let new_list =[]
