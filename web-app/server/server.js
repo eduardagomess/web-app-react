@@ -14,6 +14,7 @@ app.post('/resultado', (req, res, next) => {
     const secondNumber = parseInt(req.body.num2)
     const primeNumbersList = []
     
+    // Function to verify if the number is prime
     function isPrime(number){
         let numberOfDividers = 0
         for (let i = 1; i < number + 1; i++){
@@ -30,43 +31,35 @@ app.post('/resultado', (req, res, next) => {
     }
     
     if (secondNumber > firstNumber){
-        for (let i=firstNumber; i < secondNumber; i++){
+        for (let i = firstNumber; i < secondNumber; i++){
             if (isPrime(i)){
                 primeNumbersList.push(i)
             }
         }
     }else{
-        for (let i=secondNumber; i < firstNumber; i++){
+        for (let i = secondNumber; i < firstNumber; i++){
             if (isPrime(i)){
                 primeNumbersList.push(i)
             }
         }
-
     }
 
-    let new_list =[]
+    // edit list
+    let newPrimeNumbersList = []
     const listSize = primeNumbersList.length
+
     for (let i = 0; i < primeNumbersList.length ; i++){
-        
-        console.log(i === listSize)
-        console.log(primeNumbersList[i])
         if (i === listSize-1){
-            new_list.push(primeNumbersList[i] + '.')
+            newPrimeNumbersList.push(primeNumbersList[i] + '.')
         }
         else{
-            new_list.push(primeNumbersList[i] + ',')
+            newPrimeNumbersList.push(primeNumbersList[i] + ',')
         }
-    
     } 
-
-    console.log(new_list)
-    res.json({dados: new_list});
+    res.json({dados: newPrimeNumbersList});
 }) 
 
 
- 
-
- 
 var server = http.createServer(app); 
 server.listen(3031);
 console.log("The server is running on port 3031!")
