@@ -98,6 +98,12 @@
   margin-top: 20px;
  }
 
+ #logo-bridge{
+  margin-left: 20px;
+  margin-top: 30px;
+
+ }
+
 @media (min-width: 1024px){
   #nav {
     background-color: white;
@@ -107,7 +113,7 @@
   }
   
   #bg {
-    height: 966px;
+    height: 1000px;
     background: linear-gradient(70deg, white 40%, #0099ff 40%);
     background: linear-gradient(70deg, white 40%, #0099ff 40%);
     background: linear-gradient(70deg, white 40%, #0099ff 40%);
@@ -190,7 +196,6 @@
     margin-top: -30px;
     padding: 15px;
     color: #0099ff;
-
     border-radius: 5px;
    }
     
@@ -203,5 +208,10 @@
 
    #result {
     margin-left: calc(60% - 15px);
+   }
+
+   #logo-bridge{
+    margin-left: 20px;
+    margin-top: 200px;
    }
 }

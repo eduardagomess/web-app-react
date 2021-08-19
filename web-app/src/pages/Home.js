@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import Curiosity from '../components/Curiosity';
+import logoBridge from '../images/b-bridge.png';
 import axios from 'axios';
 import React, { useState } from 'react';
 import '../App.css'
@@ -74,6 +75,9 @@ function Home(){
                     </li>
                 </ul>
             </div> 
+            <div>
+                <img src={logoBridge} alt="Logo do Bridge" id="logo-bridge"></img>
+            </div>
         </div>
     )
 };
