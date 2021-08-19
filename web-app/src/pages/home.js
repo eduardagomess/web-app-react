@@ -10,6 +10,7 @@ function Home(){
     const [fields, setFields] = useState({ num1: 0, num2: 0, });
     const [result, setResult] = useState('')
 
+
     function handleInputChange(event){
         fields[event.target.name] = event.target.value;
         setFields(fields);
@@ -52,7 +53,7 @@ function Home(){
             </div>
             <div>
             { /*<button id='button' type='submit' value='Salvar'><spam id='button-title'>Enviar</spam></button>*/}
-              <input type="submit" value="Salvar"></input>
+              <input id='st' type="submit" value="Salvar"></input>
             </div>
         </form>
     </div>
