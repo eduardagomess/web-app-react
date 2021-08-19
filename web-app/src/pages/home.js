@@ -7,7 +7,7 @@ import '../App.css'
 
 function Home(){
 
-    const [fields, setFields] = useState({ num1: 0, num2: 0, });
+    const [fields, setFields] = useState({ num1:'none', num2:'none' });
     const [result, setResult] = useState('')
 
 
@@ -46,10 +46,10 @@ function Home(){
         </div>
         <form id='form' onSubmit={handleFormSubmit}>
             <div id='first-number'>
-                <label id="label"> Primeiro número <input className='input'  name='num1' id='num1' onChange={handleInputChange}  /> </label>
+                <label id="label"> Primeiro número <input className='input'  name='num1' id='num1' onChange={handleInputChange}  required /> </label>
             </div>
             <div id='second-number'>
-                <label id="label" > Segundo número <input  className='input' name='num2' id='num2' onChange={handleInputChange} /> </label>
+                <label id="label" > Segundo número <input  className='input' name='num2' id='num2' onChange={handleInputChange}  required /> </label>
             </div>
             <div>
             { /*<button id='button' type='submit' value='Salvar'><spam id='button-title'>Enviar</spam></button>*/}
