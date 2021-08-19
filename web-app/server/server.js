@@ -17,11 +17,11 @@ app.post('/resultado', (req, res, next) => {
     function isPrime(number){
         let number_of_dividers = 0
         for (let i = 1; i < number+1; i++){
-            if (number % i == 0){
+            if (number % i === 0){
                 number_of_dividers+=1
             }
         }
-        if (number_of_dividers == 2){
+        if (number_of_dividers === 2){
             return true;
         }
         else{
@@ -41,9 +41,9 @@ app.post('/resultado', (req, res, next) => {
     const listSize = list_prime.length
     for (let i = 0; i < list_prime.length ; i++){
         
-        console.log(i == listSize)
+        console.log(i === listSize)
         console.log(list_prime[i])
-        if (i == listSize-1){
+        if (i === listSize-1){
             new_list.push(list_prime[i] + '.')
         }
         else{
