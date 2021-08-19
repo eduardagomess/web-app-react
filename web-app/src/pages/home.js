@@ -22,7 +22,8 @@ function Home(){
                 <label id="label" > Segundo número <input  className='input' name="num2" id="num2" /> </label>
             </div>
             <div>
-                <input type="submit" value="Salvar" />
+                <button id='button' type="submit" value="Enviar"><spam id='button-title'>Enviar</spam></button>
+                { /* <input type="submit" value="Salvar"> */}
             </div>
         </form>
     </div>
