@@ -1,6 +1,6 @@
 import React from 'react';
-import next from './images/next.png';
-import './App.css'
+import next from '../images/next.png';
+import '../App.css'
 
 function Curiosity(){
         return (
@@ -9,7 +9,7 @@ function Curiosity(){
             <ul>
                 <li className='list'>
                     <div>
-                        <img id="img-next"src={next} ></img>
+                        <img id="img-next" src={next} alt="Item da lista"></img>
                     </div>
                     <table id='table'>
                         <tr><td>
@@ -19,7 +19,7 @@ function Curiosity(){
                 </li>
                 <li className='list'>
                     <div>
-                        <img id="img-next"src={next} ></img>
+                        <img id="img-next"src={next} alt="Item da lista"></img>
                     </div>
                     <table id='table'>
                         <tr><td>
@@ -29,7 +29,7 @@ function Curiosity(){
                 </li>
                 <li className='list'>
                     <div>
-                        <img id="img-next"src={next} ></img>
+                        <img id="img-next"src={next} alt="Item da lista"></img>
                     </div>
                     <table id='table'>
                         <tr><td>
@@ -39,7 +39,7 @@ function Curiosity(){
                 </li>
                 <li className='list'>
                     <div>
-                        <img id="img-next"src={next} ></img>
+                        <img id="img-next"src={next} alt="Item da lista"></img>
                     </div>
                     <table id='table'>
                         <tr><td>

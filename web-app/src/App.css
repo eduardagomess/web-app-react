@@ -68,6 +68,7 @@
 
 #result{
   display: none;
+  margin-left: 25px;
 }
 
 .mobile-hide{
@@ -97,7 +98,7 @@
   margin-top: 20px;
  }
 
- @media (min-width: 1024px){
+@media (min-width: 1024px){
   #nav {
     background-color: white;
     height: 100%;
@@ -200,9 +201,7 @@
 
    .mobile-hide{ display: inline !important; }
 
-   #result{
-    display: none ;
-    margin-left: 50px;
-  }
-
+   #result {
+    margin-left: calc(60% - 15px);
+   }
 }
