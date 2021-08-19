@@ -163,6 +163,7 @@
     margin-top: -100px;
     background-color: #0099ff;
     border-style: none;
+    cursor: pointer;
   }
   
   #button-title{
@@ -201,16 +202,7 @@
 
    #result{
     display: none ;
+    margin-left: 50px;
   }
 
-}
-
-@media (min-width: 1024px){
-  #bg {
-    height: 992px;
-    background: linear-gradient(70deg, white 40%, #0099ff 40%);
-    background: linear-gradient(70deg, white 40%, #0099ff 40%);
-    background: linear-gradient(70deg, white 40%, #0099ff 40%);
-    background: linear-gradient(70deg, white 40%, #0099ff 40%);
-  }
 }
