@@ -18,7 +18,7 @@ function Home(){
     function handleFormSubmit(event){
         event.preventDefault();
         
-        axios.post('http://localhost:3031/resultado', fields).then(response => {
+        axios.post(process.env.REACT_APP_HOST, fields).then(response => {
             document.getElementById('result').style.display = 'block';
             setResult(response.data.dados);
         });

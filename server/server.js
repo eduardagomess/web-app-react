@@ -60,4 +60,4 @@ app.post('/resultado', (req, res, next) => {
 
 
 var server = http.createServer(app); 
-server.listen(3031);
+server.listen(process.env.REACT_APP_HOST);
