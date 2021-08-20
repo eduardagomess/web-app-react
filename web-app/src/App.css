@@ -10,7 +10,7 @@
 }
 
 #bg {
-  height:812px;
+  height:900px;
   background: linear-gradient(70deg, white 40%, #0099ff 40%);
   background: linear-gradient(70deg, white 40%, #0099ff 40%);
   background: linear-gradient(70deg, white 40%, #0099ff 40%);
@@ -207,11 +207,14 @@
    .mobile-hide{ display: inline !important; }
 
    #result {
-    margin-left: calc(60% - 15px);
+    position:absolute;
+    margin-left: 60%;
    }
 
    #logo-bridge{
+    position: absolute;
     margin-left: 20px;
-    margin-top: 200px;
+    margin-top: 250px;
+    width: 100px;
    }
 }
