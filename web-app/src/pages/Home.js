@@ -69,7 +69,7 @@ function Home(){
                     <li className="list">
                         <table id="table">
                             <tr><td>
-                                <spam className="result-list">Resultado {result}</spam>
+                                <spam className="result-list">Resultado: {result}</spam>
                             </td></tr>
                         </table>
                     </li>
