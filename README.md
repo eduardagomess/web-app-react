@@ -6,9 +6,9 @@
 
 **Tecnologias utilizadas**
 
-:computer: linguagem utilizado no Frontend: JavaScript
+:computer: linguagem utilizada no Frontend: JavaScript
 
-:computer: linguagem utilizado no Backend: JavaScript
+:computer: linguagem utilizada no Backend: JavaScript
 
 :arrow_forward: ***Frontend*** - utilização da biblioteca React 
 
