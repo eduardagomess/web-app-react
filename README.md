@@ -1,39 +1,34 @@
 # web-app-react
 
-**Descrição**
+Bridge challenge
 
-:pushpin: Implementaçao de um web-app que recebe, por meio de um formulário, dois números e devolve os números primos existentes entre eles.
+**Description**
 
-**Tecnologias utilizadas**
+:pushpin: Implementation of a web-app that receives, through a form, two numbers and returns the prime numbers between them.
 
-:computer: linguagem utilizada no Frontend: JavaScript
+**Technologies**
 
-:computer: linguagem utilizada no Backend: JavaScript
+:arrow_forward: ***Frontend*** - React 
 
-:arrow_forward: ***Frontend*** - utilização da biblioteca React 
+:arrow_forward: ***Backend*** - Node.js and Express 
 
-:arrow_forward: ***Backend*** - utilização de Node.js como ambiente de execução de JS e o Framework Express para implementar o servidor
+**Run**
 
-**Instalação do Projeto**
+1) Install npm, Node.js and git.
 
-1) Instalar, caso não tenha, em sua máquina, o gerenciador de pacotes npm Node.js e git.
+2) Clone the repository (git clone https://github.com/eduardagomess/web-app-react.git)
 
-2) Clonar o repositório (git clone https://github.com/eduardagomess/web-app-react.git)
+3) Through the command line, go to the project folder (web-app-react) and execute the follow command 'npm install'
 
-3) Por meio do prompt de comando (terminal) entre na pasta do projeto (web-app-react) e faça a execução do comando 'npm install'
+4) To see the interface working just run the command 'npm start' and access http://localhost:3000.
 
-4) Para ver a interface funcionando bastar executar o comando 'npm start' e acessar http://localhost:3000.
+6) Open another command prompt window, go to the project folder (web-app-react) and navigate to the "server" folder.
 
-6) Abrir outra janela do prompt de comando (terminal) entrar novamente na pasta do projeto (web-app-react) e caminhar até a pasta "server".
+7) Run 'node server.js' to initialize the server (Port 3031)
 
-7) Posteriormente execute node server.js para incicializar o servidor (Porta 3031)
-
-
-Ao final desses passos a aplicação estará funcionado e pronta para ser utilizada!
+At the end of these steps the web application will be working and ready to be used!
 
 **Heroku**
 
-Plataforma utililizada para a o deploy de aplicações em nuvem
-
-Link: https://sequencianumerosprimos.herokuapp.com/  (o resutado demora um pouco para carregar!)
+Link: https://sequencianumerosprimos.herokuapp.com/  
 
