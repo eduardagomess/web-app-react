@@ -2,6 +2,8 @@
 
 Bridge challenge
 
+![Captura de tela de 2022-01-02 17-45-00](https://user-images.githubusercontent.com/63261217/147889023-f873bf14-c33e-4c5d-9aa5-2341b30654dc.png)
+
 **Description**
 
 :pushpin: Implementation of a web-app that receives, through a form, two numbers and returns the prime numbers between them.
